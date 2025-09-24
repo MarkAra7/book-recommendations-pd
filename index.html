@@ -1,13 +1,31 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head> </head>
+  <body>
+    <h1>Grāmatu vērtēšana</h1>
+    <div>
+      <form>
+        <label for="fname">First name:</label><br />
+        <input type="text" id="fname" name="fname" /><br />
 
-</head>
-<body>
-<h1>Grāmatu vērtēšana</h1>
+        <label for="lname">Last name:</label><br />
+        <input type="text" id="lname" name="lname" />
 
+        <label for="name">Book name:</label><br />
+        <input type="text" id="name" name="name" />
 
-</body>
+        <label for="desc">Description:</label><br />
+        <input type="textarea" id="desc" name="desc" />
 
-
+        <label for="limenis">Choose a car:</label>
+        <select name="limenis" id="limenis">
+          <option value="1">Nelasāma</option>
+          <option value="2">Slikta</option>
+          <option value="3">Viduvēja</option>
+          <option value="4">Laba</option>
+          <option value="5">Lieliska</option>
+        </select>
+      </form>
+    </div>
+  </body>
 </html>

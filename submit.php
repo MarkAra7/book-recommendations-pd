@@ -15,9 +15,20 @@ echo "Connected successfully\n";
 
 
 
+$fullname = $_POST["fname"]." ".$_POST["lname"];
+// echo $fullname;
+$bookTitle = $_POST["name"];
+$bookReview = $_POST["desc"];
+$rating = $_POST["limenis"];
+$sql = "INSERT INTO book_review (full_name, book_title, review_text,rating)
+VALUES ('$fullname', '$bookTitle', '$bookReview' ,'$rating')";
 
-echo "Dati Vieksmigi saņemti"
 
+if ($conn->query($sql) === TRUE) {
+  echo "\nNew record created successfully\n";
+} else {
+  echo "Error: " . $sql . "<br>" . $conn->error;
+}
 
 
 ?>

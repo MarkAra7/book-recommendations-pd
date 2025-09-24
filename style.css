@@ -1,0 +1,22 @@
+div{
+border: black;
+border-width: 5px;
+
+border-style: solid;
+width: 600px;
+margin: 1px;
+
+
+}
+label{
+    font-weight: bold;
+    font-size: 2rem;
+}
+form{
+    text-align: center;
+    align-items: center;
+}
+input {
+    padding: 12px;
+  width: 90%;
+}

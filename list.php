@@ -17,7 +17,7 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
   // output data of each row
   while($row = $result->fetch_assoc()) {
- 
+    
 
 
     echo "<br>" ."FULL NAME: " . $row["full_name"]."<br>". "Book Title: " . $row["book_title"]."<br>"."Review Text: ".$row["review_text"]."<br>"."Review: ". $ratingarray[$row["rating"]]. "<br>";
@@ -26,4 +26,9 @@ if ($result->num_rows > 0) {
   echo "0 results";
 }
 $conn->close();
+
+
+?>
+<a href="index.html">Add</a>
+
 
